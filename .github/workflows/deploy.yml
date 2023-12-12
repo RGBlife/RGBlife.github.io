@@ -16,16 +16,37 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
-      - name: Install, build, and upload your site
-        uses: withastro/action@v1
+
+      - name: Set up Node.js (specify your Node.js version)
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: ./dist
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v3
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+          path: dist
+
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v1
