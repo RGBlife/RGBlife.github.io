@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      colors: {
+        customSlate: "#a8b2d1",
+      }
     },
   },
   plugins: [],
