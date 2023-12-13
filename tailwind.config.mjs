@@ -27,4 +27,3 @@ export default {
   },
   plugins: [],
 };
-// a8b2d1
