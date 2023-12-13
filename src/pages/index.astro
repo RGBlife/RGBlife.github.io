@@ -4,14 +4,18 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Bret Gomes | Full Stack Developer">
   <main class="bg-darkBackground h-fit">
-    <header class="px-10 h-fit fixed top-0 w-full bg-darkBackground shadow-md z-50 gap-1">
-      <nav>
-        <ol class="items-center mx-auto px-4 flex justify-end gap-5 py-3">
-          <a
-            href="/"
-            class="text-darkPrimaryText hover:text-darkHighlight mr-auto"
-            >Bret.</a
-          >
+    <header
+      class="px-10 h-fit fixed top-0 w-full bg-darkBackground shadow-md z-50 gap-1 justify-end flex items-center"
+    >
+      <a
+        href="/"
+        class="text-darkPrimaryText hover:text-darkHighlight mr-auto text-lg font-semibold"
+        >Bret.</a
+      >
+      <nav class="w-fit">
+        <ol
+          class="hidden md:flex items-center mx-auto px-4 justify-end gap-5 py-3"
+        >
           <a href="#about" class="text-darkPrimaryText hover:text-darkHighlight"
             >About</a
           >
@@ -33,6 +37,22 @@ import Layout from "../layouts/Layout.astro";
             >CV</a
           >
         </ol>
+        <div class="md:hidden flex justify-end">
+          <button id="menuButton" class="text-white">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path></svg
+            >
+          </button>
+        </div>
       </nav>
     </header>
     <section class="pt-[80px] pl-1 flex-col items-center justify-center">
@@ -48,18 +68,18 @@ import Layout from "../layouts/Layout.astro";
         to quality are deeply valued.
       </p>
     </section>
-	<section class="pt-[4000px] pl-1 flex-col items-center justify-center">
-		<h1 class="text-darkAccent">Hello, my name is</h1>
-		<h2 class="text-darkPrimaryText">Bret Gomes</h2>
-		<h3 class="text-darkSecondaryText">Junior Full Stack Developer</h3>
-		<p class="text-darkSecondaryText">
-		  I'm a junior full stack developer. My focus is on developing
-		  user-centric web applications with an emphasis on mobile responsiveness.
-		  Driven by a passion for solving practical problems through code, I aim
-		  to create solutions that enhance everyday life. I'm currently seeking a
-		  collaborative team environment where innovative ideas and a dedication
-		  to quality are deeply valued.
-		</p>
-	  </section>
+    <section class="pt-[4000px] pl-1 flex-col items-center justify-center">
+      <h1 class="text-darkAccent">Hello, my name is</h1>
+      <h2 class="text-darkPrimaryText">Bret Gomes</h2>
+      <h3 class="text-darkSecondaryText">Junior Full Stack Developer</h3>
+      <p class="text-darkSecondaryText">
+        I'm a junior full stack developer. My focus is on developing
+        user-centric web applications with an emphasis on mobile responsiveness.
+        Driven by a passion for solving practical problems through code, I aim
+        to create solutions that enhance everyday life. I'm currently seeking a
+        collaborative team environment where innovative ideas and a dedication
+        to quality are deeply valued.
+      </p>
+    </section>
   </main>
 </Layout>
