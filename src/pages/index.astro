@@ -3,8 +3,8 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Bret Gomes | Full Stack Developer">
-  <main class="bg-darkBackground h-screen">
-    <header class="fixed top-0 w-full bg-darkBackground shadow-md z-50 gap-1">
+  <main class="bg-darkBackground h-fit">
+    <header class="px-10 h-fit fixed top-0 w-full bg-darkBackground shadow-md z-50 gap-1">
       <nav>
         <ol class="items-center mx-auto px-4 flex justify-end gap-5 py-3">
           <a
@@ -29,13 +29,13 @@ import Layout from "../layouts/Layout.astro";
           >
           <a
             href="#cv"
-            class="text-darkAccent hover:text-darkHighlight hover:border-darkHighlight border-2 border-solid border-darkAccent p-2 rounded"
+            class="text-darkAccent hover:text-darkHighlight hover:border-darkHighlight border-2 border-solid border-darkAccent px-4 py-1 rounded"
             >CV</a
           >
         </ol>
       </nav>
     </header>
-    <div class="pt-[80px] pl-1">
+    <section class="pt-[80px] pl-1 flex-col items-center justify-center">
       <h1 class="text-darkAccent">Hello, my name is</h1>
       <h2 class="text-darkPrimaryText">Bret Gomes</h2>
       <h3 class="text-darkSecondaryText">Junior Full Stack Developer</h3>
@@ -47,6 +47,19 @@ import Layout from "../layouts/Layout.astro";
         collaborative team environment where innovative ideas and a dedication
         to quality are deeply valued.
       </p>
-    </div>
+    </section>
+	<section class="pt-[4000px] pl-1 flex-col items-center justify-center">
+		<h1 class="text-darkAccent">Hello, my name is</h1>
+		<h2 class="text-darkPrimaryText">Bret Gomes</h2>
+		<h3 class="text-darkSecondaryText">Junior Full Stack Developer</h3>
+		<p class="text-darkSecondaryText">
+		  I'm a junior full stack developer. My focus is on developing
+		  user-centric web applications with an emphasis on mobile responsiveness.
+		  Driven by a passion for solving practical problems through code, I aim
+		  to create solutions that enhance everyday life. I'm currently seeking a
+		  collaborative team environment where innovative ideas and a dedication
+		  to quality are deeply valued.
+		</p>
+	  </section>
   </main>
 </Layout>

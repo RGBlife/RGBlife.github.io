@@ -7,7 +7,8 @@ export default {
         inter: ["Inter", "sans-serif"],
       },
       colors: {
-        darkBackground: "#0a192f",
+        // darkBackground: "#0a192f",
+        darkBackground: "#1B263B",
         darkPrimaryText: "#a8b2d1",
         darkSecondaryText: "#ccd6f6",
         darkAccent: "#FF6B6B",
