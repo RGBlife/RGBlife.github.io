@@ -3,8 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import MenuToggle from "../components/MenuToggle.tsx";
 ---
 
-<Layout title="Bret Gomes | Full Stack Developer">
-  <main class="bg-darkBackground h-fit">
+<Layout title="Bret Gomes | Junior Full Stack Developer">
+  <body class="bg-darkBackground h-fit">
     <header
       class="px-10 h-fit fixed top-0 w-full bg-darkBackground shadow-md z-50 gap-1 justify-end flex items-center"
     >
@@ -14,7 +14,7 @@ import MenuToggle from "../components/MenuToggle.tsx";
         >Bret.</a
       >
       <nav class="w-fit">
-        <ol
+        <ol 
           class="hidden md:flex items-center mx-auto px-4 justify-end gap-5 py-3"
         >
           <a href="#about" class="text-darkPrimaryText hover:text-darkHighlight"
@@ -23,7 +23,7 @@ import MenuToggle from "../components/MenuToggle.tsx";
           <a
             href="#experience"
             class="text-darkPrimaryText hover:text-darkHighlight">Experience</a
-          >
+          >     
           <a
             href="#projects"
             class="text-darkPrimaryText hover:text-darkHighlight">Projects</a
@@ -66,31 +66,39 @@ import MenuToggle from "../components/MenuToggle.tsx";
         </MenuToggle>
       </nav>
     </header>
-    <section class="pt-[80px] pl-1 flex-col items-center justify-center">
-      <h1 class="text-darkAccent">Hello, my name is</h1>
-      <h2 class="text-darkPrimaryText">Bret Gomes</h2>
-      <h3 class="text-darkSecondaryText">Junior Full Stack Developer</h3>
-      <p class="text-darkSecondaryText">
-        I'm a junior full stack developer. My focus is on developing
-        user-centric web applications with an emphasis on mobile responsiveness.
-        Driven by a passion for solving practical problems through code, I aim
-        to create solutions that enhance everyday life. I'm currently seeking a
-        collaborative team environment where innovative ideas and a dedication
-        to quality are deeply valued.
-      </p>
-    </section>
-    <section class="pt-[4000px] pl-1 flex-col items-center justify-center">
-      <h1 class="text-darkAccent">Hello, my name is</h1>
-      <h2 class="text-darkPrimaryText">Bret Gomes</h2>
-      <h3 class="text-darkSecondaryText">Junior Full Stack Developer</h3>
-      <p class="text-darkSecondaryText">
-        I'm a junior full stack developer. My focus is on developing
-        user-centric web applications with an emphasis on mobile responsiveness.
-        Driven by a passion for solving practical problems through code, I aim
-        to create solutions that enhance everyday life. I'm currently seeking a
-        collaborative team environment where innovative ideas and a dedication
-        to quality are deeply valued.
-      </p>
-    </section>
-  </main>
+    <div class="left-20 right-auto fixed w-10 z-40 text-red-500">ADDED FOR TESTING</div>
+    <div class="">Test2</div>
+
+    <main class="px-[200px] bg-darkSecondaryBackground">
+      <section
+        class="flex flex-col justify-center items-start min-h-[100vh] p-0"
+      >
+        <h1 class="text-darkAccent text-sm font-light ml-1 mb-4">Hello, my name is</h1>
+        <h2 class="text-darkPrimaryText text-7xl font-semibold">Bret Gomes</h2>
+        <h3 class="text-darkSecondaryText text-7xl font-semibold mt-1">Junior Full Stack Developer</h3>
+        <p class="text-darkSecondaryText text-lg mt-5">
+          I'm a junior full stack developer. My focus is on developing
+          user-centric web applications with an emphasis on mobile
+          responsiveness. Driven by a passion for solving practical problems
+          through code, I aim to create solutions that enhance everyday life.
+          I'm currently seeking a collaborative team environment where
+          innovative ideas and a dedication to quality are deeply valued.
+        </p>
+      </section>
+
+      <section class="pt-[4000px] pl-1 flex-col items-center justify-center">
+        <h1 class="text-darkAccent">Hello, my name is</h1>
+        <h2 class="text-darkPrimaryText">Bret Gomes</h2>
+        <h3 class="text-darkSecondaryText">Junior Full Stack Developer</h3>
+        <p class="text-darkSecondaryText">
+          I'm a junior full stack developer. My focus is on developing
+          user-centric web applications with an emphasis on mobile
+          responsiveness. Driven by a passion for solving practical problems
+          through code, I aim to create solutions that enhance everyday life.
+          I'm currently seeking a collaborative team environment where
+          innovative ideas and a dedication to quality are deeply valued.
+        </p>
+      </section>
+    </main>
+  </body>
 </Layout>
