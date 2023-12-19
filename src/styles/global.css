@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply leading-snug font-inter overscroll-contain  h-full m-0 p-0;
+  }
+  * {
+    @apply box-border;
+  }
+  html {
+    @apply antialiased scroll-smooth;
+  }
+  li {
+    @apply list-none text-darkSecondaryText flex;
+  }
+  p {
+    @apply text-darkSecondaryText text-lg mt-5;
+  }
+}
+
+.gradient-line {
+  height: 1px;
+  background: linear-gradient(to right, #a8b2d1, #8892b0);
+} 
+
+
+
