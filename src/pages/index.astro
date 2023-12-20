@@ -1,7 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import MenuToggle from "../components/MenuToggle.tsx";
+import { MenuToggle } from "../components/MenuToggle.tsx";
 import { SquareTag } from "../components/SquareTag";
+import { ContactForm } from "../components/ContactForm";
 ---
 
 <Layout title="Bret Gomes | Junior Full Stack Developer">
@@ -20,10 +21,6 @@ import { SquareTag } from "../components/SquareTag";
         >
           <a href="#about" class="text-darkPrimaryText hover:text-darkAccent"
             >About</a
-          >
-          <a
-            href="#experience"
-            class="text-darkPrimaryText hover:text-darkAccent">Experience</a
           >
           <a href="#projects" class="text-darkPrimaryText hover:text-darkAccent"
             >Projects</a
@@ -48,7 +45,9 @@ import { SquareTag } from "../components/SquareTag";
       <section
         class="flex flex-col justify-center items-start min-h-[100vh] p-0"
       >
-        <h1 class="text-darkBackground p-3 bg-darkAccent text-sm font-bold -rotate-12 -ml-4 -mb-2">
+        <h1
+          class="text-darkBackground p-3 bg-darkAccent text-sm font-bold -rotate-12 -ml-4 -mb-2"
+        >
           Hello, my name is
         </h1>
         <h2 class="text-darkSecondaryText z-10 text-7xl font-semibold">
@@ -57,13 +56,13 @@ import { SquareTag } from "../components/SquareTag";
         <h3 class="text-darkPrimaryText text-7xl font-semibold mt-1">
           Full Stack Developer
         </h3>
-        <p class="text-darkSecondaryText text-lg mt-5">
-          My focus is on developing user-centric web applications with an
-          emphasis on mobile responsiveness. Driven by a passion for solving
-          practical problems through code, I aim to create solutions that
-          enhance everyday life. I'm currently seeking a collaborative team
-          environment where innovative ideas and a dedication to quality are
-          deeply valued.
+        <p
+          class="text-darkSecondaryText text-lg mt-5 text-left max-w-screen-sm"
+        >
+          I'm interested in helping engineer the future of software and web
+          applications with a keen interest in user experience. Currently, I'm
+          building an array of personal projects to explore new technologies and
+          solve everyday problems.
         </p>
       </section>
       <section
@@ -71,29 +70,39 @@ import { SquareTag } from "../components/SquareTag";
         class="flex flex-col justify-center items-start min-h-[100vh] p-0"
       >
         <div class="flex items-center w-full">
-          <SquareTag text="About Me"/>
+          <SquareTag text="About Me" />
         </div>
 
-        <p>
+        <p class="max-w-screen-lg">
           I'm a self-taught software developer from the South East of England, I
           embarked on my tech journey in 2022 where my passion for coding
           ignited during my time as a junior developer, where I helped
           businesses automate their workflows using
           <a
+            class="text-darkAccent underline font-normal decoration-solid"
             href="https://www.zoho.com/deluge/"
             target="_blank"
             rel="noopener noreferrer">Deluge</a
           >
            (a scripting language) and JavaScript within the
           <a
+            class="text-darkAccent underline font-normal decoration-solid"
             href="https://www.zoho.com/"
             target="_blank"
             rel="noopener noreferrer">Zoho Ecosystem</a
           >. This experience deepened my interest in tech and motivated me to
           delve further into software development.
         </p>
-        <h2 class="text-darkSecondaryText">My Toolkit Includes:</h2>
-        <ul>
+
+        <p class="max-w-screen-lg">
+          I'm currently focused on enhancing my full-stack development skills
+          and am keen to explore Rust in the future, attracted by its static
+          typing and strong backend capabilities.
+        </p>
+        <h2 class="text-darkSecondaryText text-lg my-3">
+          My Toolkit Includes:
+        </h2>
+        <ul class="flex-wrap">
           <li>
             <img
               src="/Typescript_logo_2020.svg"
@@ -101,12 +110,13 @@ import { SquareTag } from "../components/SquareTag";
               style="height: 24px;"
             />
 
-            <strong>TypeScript & JavaScript:</strong> For robust and dynamic
-            applications.
+            <strong class="mx-1">TypeScript & JavaScript:</strong>For robust and
+            dynamic applications.
           </li>
           <li>
             <img src="React-icon.svg" alt="React Logo" style="height: 24px;" />
-            <strong>React:</strong> Crafting interactive user interfaces.
+            <strong class="mx-1">React:</strong> Crafting interactive user
+            interfaces.
           </li>
           <li>
             <img
@@ -114,7 +124,8 @@ import { SquareTag } from "../components/SquareTag";
               alt="Node JS Logo"
               style="height: 24px;"
             />
-            <strong>Node.js:</strong> Building efficient back-end services.
+            <strong class="mx-1">Node.js:</strong> Building efficient back-end
+            services.
           </li>
           <li>
             <img
@@ -122,88 +133,37 @@ import { SquareTag } from "../components/SquareTag";
               alt="Tailwind CSS Logo"
               style="height: 24px;"
             />
-            <strong>Tailwind:</strong> Designing stylish and responsive layouts.
+            <strong class="mx-1">Tailwind:</strong> Designing stylish and
+            responsive layouts.
           </li>
         </ul>
-        <p>
-          I'm currently focused on enhancing my full-stack development skills
-          and am keen to explore Rust in the future, attracted by its static
-          typing and strong backend capabilities.
-        </p>
-      </section>
-      <section
-        id="experience"
-        class="flex flex-col justify-center items-start min-h-[100vh] p-0"
-      >
-        <h1 class="text-darkAccent text-sm font-light ml-1 mb-4">About Me</h1>
-        <h2 class="text-darkSecondaryText text-7xl font-semibold">
-          Bret Gomes
-        </h2>
-        <h3 class="text-darkPrimaryText text-7xl font-semibold mt-1">
-          Full Stack Developer
-        </h3>
-        <p class="text-darkSecondaryText text-lg mt-5">
-          My focus is on developing user-centric web applications with an
-          emphasis on mobile responsiveness. Driven by a passion for solving
-          practical problems through code, I aim to create solutions that
-          enhance everyday life. I'm currently seeking a collaborative team
-          environment where innovative ideas and a dedication to quality are
-          deeply valued.
-        </p>
       </section>
       <section
         id="projects"
-        class="flex flex-col justify-center items-start min-h-[100vh] p-0"
+        class="flex justify-center items-start min-h-[100vh] p-0"
       >
-        <h1 class="text-darkAccent text-sm font-light ml-1 mb-4">About Me</h1>
-        <h2 class="text-darkSecondaryText text-7xl font-semibold">
-          Bret Gomes
+        <SquareTag text="Projects" />
+        <img
+          src="/ReelTalk.png"
+          alt="ReelTalk Social Movie App"
+          class="w-full"
+        />
+        <h2
+          id="project_title"
+          class="text-darkSecondaryText text-7xl font-semibold"
+        >
+          ReelTalk Social Movie App
         </h2>
-        <h3 class="text-darkPrimaryText text-7xl font-semibold mt-1">
-          Full Stack Developer
-        </h3>
-        <p class="text-darkSecondaryText text-lg mt-5">
-          My focus is on developing user-centric web applications with an
-          emphasis on mobile responsiveness. Driven by a passion for solving
-          practical problems through code, I aim to create solutions that
-          enhance everyday life. I'm currently seeking a collaborative team
-          environment where innovative ideas and a dedication to quality are
-          deeply valued.
+        <p id="project_description" class="text-darkSecondaryText text-lg mt-5">
+          Project info
         </p>
       </section>
       <section
         id="contact"
         class="flex flex-col justify-center items-start min-h-[100vh] p-0"
       >
-        <h1 class="text-darkAccent text-sm font-light ml-1 mb-4">About Me</h1>
-        <h2 class="text-darkSecondaryText text-7xl font-semibold">
-          Bret Gomes
-        </h2>
-        <h3 class="text-darkPrimaryText text-7xl font-semibold mt-1">
-          Full Stack Developer
-        </h3>
-        <p class="text-darkSecondaryText text-lg mt-5">
-          My focus is on developing user-centric web applications with an
-          emphasis on mobile responsiveness. Driven by a passion for solving
-          practical problems through code, I aim to create solutions that
-          enhance everyday life. I'm currently seeking a collaborative team
-          environment where innovative ideas and a dedication to quality are
-          deeply valued.
-        </p>
-      </section>
-
-      <section class="pt-[4000px] pl-1 flex-col items-center justify-center">
-        <h1 class="text-darkAccent">Hello, my name is</h1>
-        <h2 class="text-darkPrimaryText">Bret Gomes</h2>
-        <h3 class="text-darkSecondaryText">Junior Full Stack Developer</h3>
-        <p class="text-darkSecondaryText">
-          I'm a junior full stack developer. My focus is on developing
-          user-centric web applications with an emphasis on mobile
-          responsiveness. Driven by a passion for solving practical problems
-          through code, I aim to create solutions that enhance everyday life.
-          I'm currently seeking a collaborative team environment where
-          innovative ideas and a dedication to quality are deeply valued.
-        </p>
+        <SquareTag text="Contact" />
+        <ContactForm client:load />
       </section>
     </main>
   </body>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const MenuToggle = () => {
+export const MenuToggle = () => {
   const [menuVisible, setMenuVisible] = useState(false);
 
   const toggleMenu = () => {
@@ -44,12 +44,6 @@ const MenuToggle = () => {
           Home
         </a>
         <a
-          href="#experience"
-          className="block text-darkPrimaryText hover:text-darkAccent"
-        >
-          Experience
-        </a>
-        <a
           href="#projects"
           className="block text-darkPrimaryText hover:text-darkAccent"
         >
@@ -71,5 +65,3 @@ const MenuToggle = () => {
     </>
   );
 };
-
-export default MenuToggle;
