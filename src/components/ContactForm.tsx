@@ -15,7 +15,7 @@ export const ContactForm = () => {
       className="flex flex-col justify-center items-center "
       onSubmit={handleSubmit}
     >
-      <p>
+      <p className="max-w-screen-sm">
         Have a question or want to work together? Leave your details and I'll
         get back to you as soon as possible.
       </p>
@@ -55,7 +55,7 @@ export const ContactForm = () => {
         onChange={(event) => setMessage(event.target.value)}
       />
       <button
-        className="text-darkSecondaryText text-lg mt-5 font-light"
+        className="text-darkAccent text-lg mt-5 font-light border-2 border-solid border-darkAccent px-4 py-1 rounded hover:bg-darkAccent hover:text-darkBackground "
         type="submit"
       >
         Submit

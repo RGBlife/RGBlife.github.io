@@ -19,6 +19,9 @@
   p {
     @apply text-darkSecondaryText text-lg mt-5 font-light;
   }
+  img {
+    @apply overflow-clip;
+  }
 }
 
 .gradient-line {
