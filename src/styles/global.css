@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Roboto:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Roboto:wght@900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +11,7 @@
     @apply box-border;
   }
   html {
-    @apply antialiased scroll-smooth;
+    @apply antialiased scroll-smooth w-full bg-darkBackground;
   }
   li {
     @apply list-none text-darkSecondaryText flex font-light text-lg;
@@ -22,12 +22,12 @@
   img {
     @apply overflow-clip;
   }
+  /* #root {
+    @apply min-h-screen grid grid-rows-[1fr,auto] grid-cols-1;
+  } */
 }
 
 .gradient-line {
   height: 1px;
   background: linear-gradient(to right, #a8b2d1, #8892b0);
-} 
-
-
-
+}
