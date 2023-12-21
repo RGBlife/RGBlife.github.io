@@ -30,7 +30,7 @@ import { ContactForm } from "../components/ContactForm";
           >
           <a
             href="#cv"
-            class="text-darkAccent  border-2 border-solid border-darkAccent px-4 py-1 rounded hover:bg-darkAccent hover:text-darkBackground"
+            class="text-darkAccent border-2 border-solid border-darkAccent px-4 py-1 rounded hover:bg-darkAccent hover:text-darkBackground"
             >CV</a
           >
         </ol>
@@ -41,7 +41,9 @@ import { ContactForm } from "../components/ContactForm";
       ADDED FOR TESTING
     </div>
 
-    <main class="px-[50px] md:px-[100px] lg:px-[200px] mx-auto my-0 w-full max-w-screen-2xl min-h-screen">
+    <main
+      class="px-[50px] md:px-[100px] lg:px-[200px] mx-auto my-0 w-full max-w-screen-2xl min-h-screen"
+    >
       <section
         class="flex flex-col justify-center items-start min-h-[100vh] p-0"
       >
@@ -180,7 +182,7 @@ import { ContactForm } from "../components/ContactForm";
               id="project_title"
               class="text-darkBackground text-xl font-semibold"
             >
-              ReelTalk Social Movie App
+              Article Hub
             </h2>
             <p
               id="project_description"
@@ -193,20 +195,45 @@ import { ContactForm } from "../components/ContactForm";
           <div class="flex-shrink-0 relative">
             <img
               class="w-full md:w-auto md:max-w-md object-cover"
-              src="/ReelTalk.png"
-              alt="ReelTalk Social Movie App"
+              src="/article_hub.png"
+              alt="Article Hub App"
             />
+          </div>
+        </container>
+        <container
+          class="flex flex-col md:flex-row justify-center items-center p-4"
+        >
+          <div class="flex-shrink-0 relative">
+            <img
+              class="w-full md:w-auto md:max-w-md object-cover"
+              src="/bubbly.png"
+              alt="Bubbly App"
+            />
+          </div>
+          <div
+            class="mt-4 md:mt-0 md:ml-[-100px] bg-darkAccent z-10 p-4 shadow-lg"
+          >
+            <h2
+              id="project_title"
+              class="text-darkBackground text-xl font-semibold"
+            >
+              Bubbly
+            </h2>
+            <p
+              id="project_description"
+              class="text-darkBackground text-base mt-2"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec
+              quam tempus, laoreet urna et, condimentum urna.
+            </p>
           </div>
         </container>
       </section>
 
       <section
         id="contact"
-        class="flex flex-col justify-center items-center min-h-[100vh] p-0"
+        class="flex flex-col justify-center items-center min-h-[100vh] p-0 relative"
       >
-        <div class="flex items-center w-full">
-          <SquareTag text="Contact" />
-        </div>
         <ContactForm client:load />
       </section>
     </main>

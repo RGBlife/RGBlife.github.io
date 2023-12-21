@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SquareTag } from "./SquareTag";
 
 export const ContactForm = () => {
   const [name, setName] = useState("");
@@ -12,10 +13,13 @@ export const ContactForm = () => {
 
   return (
     <form
-      className="flex flex-col justify-center items-center "
+      className="flex flex-col justify-center items-center relative"
       onSubmit={handleSubmit}
     >
-      <p className="max-w-screen-sm">
+      <div className="absolute top-0 left-0">
+        <SquareTag text="Contact" />
+      </div>
+      <p className="ml-16 max-w-screen-sm z-10">
         Have a question or want to work together? Leave your details and I'll
         get back to you as soon as possible.
       </p>
