@@ -40,24 +40,28 @@ export const MenuToggle = () => {
         <a
           href="#about"
           className="block text-darkPrimaryText hover:text-darkAccent"
+          onClick={toggleMenu}
         >
           Home
         </a>
         <a
           href="#projects"
           className="block text-darkPrimaryText hover:text-darkAccent"
+          onClick={toggleMenu}
         >
           Projects
         </a>
         <a
           href="#contact"
           className="block text-darkPrimaryText hover:text-darkAccent"
+          onClick={toggleMenu}
         >
           Contact
         </a>
         <a
           href="#cv"
           className="text-darkAccent hover:text-darkAccent hover:border-darkHighlight border-2 border-solid border-darkAccent px-4 py-1 rounded"
+          onClick={toggleMenu}
         >
           CV
         </a>

@@ -1,8 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { MenuToggle } from "../components/MenuToggle.tsx";
+import { Nav } from "../components/Nav.tsx";
 import { SquareTag } from "../components/SquareTag";
 import { ContactForm } from "../components/ContactForm";
+import { Introduction } from "../components/Introduction";
+import { About } from "../components/About";
 ---
 
 <Layout title="Bret Gomes | Junior Full Stack Developer">
@@ -10,140 +12,22 @@ import { ContactForm } from "../components/ContactForm";
     <header
       class="px-10 h-fit fixed top-0 w-full bg-darkBackground shadow-md z-50 gap-1 justify-end flex items-center"
     >
-      <a
-        href="/"
-        class="text-darkAccent hover:text-darkHighlight mr-auto text-lg font-semibold"
-        >Bret.</a
-      >
-      <nav class="w-fit">
-        <ol
-          class="hidden md:flex items-center mx-auto px-4 justify-end gap-5 py-3"
-        >
-          <a href="#about" class="text-darkPrimaryText hover:text-darkAccent"
-            >About</a
-          >
-          <a href="#projects" class="text-darkPrimaryText hover:text-darkAccent"
-            >Projects</a
-          >
-          <a href="#contact" class="text-darkPrimaryText hover:text-darkAccent"
-            >Contact</a
-          >
-          <a
-            href="#cv"
-            class="text-darkAccent border-2 border-solid border-darkAccent px-4 py-1 rounded hover:bg-darkAccent hover:text-darkBackground"
-            >CV</a
-          >
-        </ol>
-        <MenuToggle client:load />
-      </nav>
+      <Nav client:load />
     </header>
-    <div class="left-20 right-auto fixed w-10 z-40 text-red-500">
+    <div class="left-20 right-auto fixed w-10 z-40 text-red-500 opacity-0">
       ADDED FOR TESTING
     </div>
 
     <main
       class="px-[50px] md:px-[100px] lg:px-[200px] mx-auto my-0 w-full max-w-screen-2xl min-h-screen"
     >
-      <section
-        class="flex flex-col justify-center items-start min-h-[100vh] p-0"
-      >
-        <h1
-          class="text-darkBackground p-3 bg-darkAccent text-sm font-bold -rotate-12 -ml-4 -mb-2"
-        >
-          Hello, my name is
-        </h1>
-        <h2 class="text-darkSecondaryText z-10 text-7xl font-semibold">
-          Bret Gomes
-        </h2>
-        <h3 class="text-darkPrimaryText text-7xl font-semibold mt-1">
-          Full Stack Developer
-        </h3>
-        <p
-          class="text-darkSecondaryText text-lg mt-5 text-left max-w-screen-sm"
-        >
-          I'm interested in helping engineer the future of software and web
-          applications with a keen interest in user experience. Currently, I'm
-          building an array of personal projects to explore new technologies and
-          solve everyday problems.
-        </p>
-      </section>
-      <section
-        id="about"
-        class="flex flex-col justify-center items-start min-h-[100vh] p-0"
-      >
-        <div class="flex items-center w-full">
-          <SquareTag text="About Me" />
-        </div>
-
-        <p class="max-w-screen-lg">
-          I'm a self-taught software developer from the South East of England, I
-          embarked on my tech journey in 2022 where my passion for coding
-          ignited during my time as a junior developer, where I helped
-          businesses automate their workflows using
-          <a
-            class="text-darkAccent underline font-normal decoration-solid"
-            href="https://www.zoho.com/deluge/"
-            target="_blank"
-            rel="noopener noreferrer">Deluge</a
-          >
-           (a scripting language) and JavaScript within the
-          <a
-            class="text-darkAccent underline font-normal decoration-solid"
-            href="https://www.zoho.com/"
-            target="_blank"
-            rel="noopener noreferrer">Zoho Ecosystem</a
-          >. This experience deepened my interest in tech and motivated me to
-          delve further into software development.
-        </p>
-
-        <p class="max-w-screen-lg">
-          I'm currently focused on enhancing my full-stack development skills
-          and am keen to explore Rust in the future, attracted by its static
-          typing and strong backend capabilities.
-        </p>
-        <h2 class="text-darkSecondaryText text-lg my-3">
-          My Toolkit Includes:
-        </h2>
-        <ul class="flex-wrap">
-          <li>
-            <img
-              src="/Typescript_logo_2020.svg"
-              alt="TypeScript Logo"
-              style="height: 24px;"
-            />
-
-            <strong class="mx-1">TypeScript & JavaScript:</strong>For robust and
-            dynamic applications.
-          </li>
-          <li>
-            <img src="React-icon.svg" alt="React Logo" style="height: 24px;" />
-            <strong class="mx-1">React:</strong> Crafting interactive user
-            interfaces.
-          </li>
-          <li>
-            <img
-              src="/Node.js_logo.svg"
-              alt="Node JS Logo"
-              style="height: 24px;"
-            />
-            <strong class="mx-1">Node.js:</strong> Building efficient back-end
-            services.
-          </li>
-          <li>
-            <img
-              src="/Tailwind_CSS_Logo.svg"
-              alt="Tailwind CSS Logo"
-              style="height: 24px;"
-            />
-            <strong class="mx-1">Tailwind:</strong> Designing stylish and
-            responsive layouts.
-          </li>
-        </ul>
-      </section>
+      <Introduction />
+      <About />
       <section id="projects">
         <div class="flex left-0">
           <SquareTag text="Projects" />
         </div>
+        <!-- Project 1 -->
         <container
           class="flex flex-col md:flex-row justify-center items-center p-4"
         >
@@ -154,6 +38,9 @@ import { ContactForm } from "../components/ContactForm";
               alt="ReelTalk Social Movie App"
             />
           </div>
+          <h2 id="project_title" class="text-white text-xl font-semibold">
+            ReelTalk Social Movie App
+          </h2>
           <div
             class="mt-4 md:mt-0 md:ml-[-100px] bg-darkAccent z-10 p-4 shadow-lg"
           >
@@ -172,6 +59,7 @@ import { ContactForm } from "../components/ContactForm";
             </p>
           </div>
         </container>
+        <!-- Project 2 -->
         <container
           class="flex flex-col md:flex-row justify-center items-center p-4"
         >
@@ -200,6 +88,7 @@ import { ContactForm } from "../components/ContactForm";
             />
           </div>
         </container>
+        <!-- Project 3 -->
         <container
           class="flex flex-col md:flex-row justify-center items-center p-4"
         >

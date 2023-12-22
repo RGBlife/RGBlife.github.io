@@ -8,6 +8,7 @@ export default {
       },
       colors: {
         darkBackground: "#0a192f",
+        lighterDarkBackground: "#56657b",
         // darkBackground: "#1B263B",
         darkPrimaryText: "#a8b2d1",
         darkSecondaryText: "#ccd6f6",
