@@ -7,6 +7,24 @@ import { Introduction } from "../components/Introduction";
 import { About } from "../components/About";
 ---
 
+<script type="module">
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.getElementById("menuButton");
+    const mainContent = document.getElementById("mainContent");
+
+    let isMenuOpen = false;
+
+    menuButton.addEventListener("click", () => {
+      isMenuOpen = !isMenuOpen;
+      if (isMenuOpen) {
+        mainContent.classList.add("blur-sm");
+      } else {
+        mainContent.classList.remove("blur-sm");
+      }
+    });
+  });
+</script>
+
 <Layout title="Bret Gomes | Junior Full Stack Developer">
   <body>
     <header
@@ -19,6 +37,7 @@ import { About } from "../components/About";
     </div>
 
     <main
+      id="mainContent"
       class="px-[50px] md:px-[100px] lg:px-[200px] mx-auto my-0 w-full max-w-screen-2xl min-h-screen"
     >
       <Introduction />

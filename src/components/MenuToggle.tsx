@@ -34,7 +34,9 @@ export const MenuToggle = () => {
       <div
         id="mobileMenu"
         className={`${
-          menuVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
+          menuVisible
+            ? "opacity-100 translate-x-0"
+            : "opacity-0 translate-x-full"
         } fixed inset-y-0 right-0 w-64 bg-darkBackground shadow-lg transition-all duration-300 ease-in-out justify-center gap-10 items-center flex flex-col lg:hidden`}
       >
         <a
