@@ -41,13 +41,13 @@ export const ContactForm = () => {
       className="flex flex-col justify-center items-center relative gap-4"
       onSubmit={handleSubmit}
     >
-      <p className="max-w-screen-sm z-10 mb-5 relative">
-        <div className="absolute -top-11">
+      <span className="text-darkPrimaryText max-w-screen-sm z-10 mb-5 relative">
+        <label className="absolute -top-11">
           <SquareTag text="Contact" />
-        </div>
+        </label>
         Have a question or want to work together? Leave your details and I'll
         get back to you as soon as possible.
-      </p>
+      </span>
 
       <input
         className="text-darkSecondaryText bg-lighterDarkBackground text-sm border-l-4 border-l-solid border-l-transparent w-2/4 px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-darkAccent focus:border-transparent"
