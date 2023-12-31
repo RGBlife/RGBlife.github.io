@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 
 export const MenuToggle = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -6,6 +7,16 @@ export const MenuToggle = () => {
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
+
+  useEffect(() => {
+    const mainContent = document.getElementById("mainContent");
+
+    if (mainContent) {
+      menuVisible
+        ? mainContent.classList.add("blur-sm")
+        : mainContent.classList.remove("blur-sm");
+    }
+  }, [menuVisible]);
 
   return (
     <>
@@ -31,6 +42,12 @@ export const MenuToggle = () => {
           </svg>
         </button>
       </div>
+      {menuVisible && (
+        <div
+          className="h-full w-full fixed flex flex-col inset-0"
+          onClick={toggleMenu}
+        />
+      )}
       <div
         id="mobileMenu"
         className={`${

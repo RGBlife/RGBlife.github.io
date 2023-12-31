@@ -1,6 +1,6 @@
 export const Introduction = () => {
   return (
-    <section className="flex flex-col justify-center items-start min-h-[100vh] p-0">
+    <section className="flex flex-col justify-center items-start min-h-[90vh] p-0">
       <h1 className="text-darkBackground p-3 bg-darkAccent text-sm font-bold -rotate-12 -ml-4 -mb-2">
         Hello, my name is
       </h1>

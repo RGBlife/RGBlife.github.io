@@ -5,145 +5,63 @@ import { SquareTag } from "../components/SquareTag";
 import { ContactForm } from "../components/ContactForm";
 import { Introduction } from "../components/Introduction";
 import { About } from "../components/About";
+import { ProjectButtons } from "../components/ProjectButtons";
+import { ProjectCard } from "../components/project/ProjectCard";
 ---
 
-<script type="module">
-  document.addEventListener("DOMContentLoaded", () => {
-    const menuButton = document.getElementById("menuButton");
-    const mainContent = document.getElementById("mainContent");
-
-    let isMenuOpen = false;
-
-    menuButton.addEventListener("click", () => {
-      isMenuOpen = !isMenuOpen;
-      if (isMenuOpen) {
-        mainContent.classList.add("blur-sm");
-      } else {
-        mainContent.classList.remove("blur-sm");
-      }
-    });
-  });
-</script>
-
 <Layout title="Bret Gomes | Junior Full Stack Developer">
-  <body>
-    <header
-      class="px-10 h-fit fixed top-0 w-full bg-darkBackground shadow-md z-50 gap-1 justify-end flex items-center"
-    >
-      <Nav client:load />
-    </header>
-    <div class="left-20 right-auto fixed w-10 z-40 text-red-500 opacity-0">
-      ADDED FOR TESTING
-    </div>
+  <header
+    class="px-10 h-fit fixed top-0 w-full bg-darkBackground shadow-md z-50 gap-1 justify-end flex items-center"
+  >
+    <Nav client:load />
+  </header>
+  <div class="left-20 right-auto fixed w-10 z-40 text-red-500 opacity-0">
+    ADDED FOR TESTING
+  </div>
 
-    <main
-      id="mainContent"
-      class="px-[50px] md:px-[100px] lg:px-[200px] mx-auto my-0 w-full max-w-screen-2xl min-h-screen"
-    >
-      <Introduction />
-      <About />
-      <section id="projects">
-        <div class="flex left-0">
-          <SquareTag text="Projects" />
-        </div>
-        <!-- Project 1 -->
-        <container
-          class="flex flex-col md:flex-row justify-center items-center p-4"
-        >
-          <div class="flex-shrink-0 relative">
-            <img
-              class="w-full md:w-auto md:max-w-md object-cover"
-              src="/ReelTalk.png"
-              alt="ReelTalk Social Movie App"
-            />
-          </div>
-          <h2 id="project_title" class="text-white text-xl font-semibold">
-            ReelTalk Social Movie App
-          </h2>
-          <div
-            class="mt-4 md:mt-0 md:ml-[-100px] bg-darkAccent z-10 p-4 shadow-lg"
-          >
-            <h2
-              id="project_title"
-              class="text-darkBackground text-xl font-semibold"
-            >
-              ReelTalk Social Movie App
-            </h2>
-            <p
-              id="project_description"
-              class="text-darkBackground text-base mt-2"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec
-              quam tempus, laoreet urna et, condimentum urna.
-            </p>
-          </div>
-        </container>
-        <!-- Project 2 -->
-        <container
-          class="flex flex-col md:flex-row justify-center items-center p-4"
-        >
-          <div
-            class="mt-4 md:mt-0 md:ml-[-100px] bg-darkAccent z-10 p-4 shadow-lg"
-          >
-            <h2
-              id="project_title"
-              class="text-darkBackground text-xl font-semibold"
-            >
-              Article Hub
-            </h2>
-            <p
-              id="project_description"
-              class="text-darkBackground text-base mt-2"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec
-              quam tempus, laoreet urna et, condimentum urna.
-            </p>
-          </div>
-          <div class="flex-shrink-0 relative">
-            <img
-              class="w-full md:w-auto md:max-w-md object-cover"
-              src="/article_hub.png"
-              alt="Article Hub App"
-            />
-          </div>
-        </container>
-        <!-- Project 3 -->
-        <container
-          class="flex flex-col md:flex-row justify-center items-center p-4"
-        >
-          <div class="flex-shrink-0 relative">
-            <img
-              class="w-full md:w-auto md:max-w-md object-cover"
-              src="/bubbly.png"
-              alt="Bubbly App"
-            />
-          </div>
-          <div
-            class="mt-4 md:mt-0 md:ml-[-100px] bg-darkAccent z-10 p-4 shadow-lg"
-          >
-            <h2
-              id="project_title"
-              class="text-darkBackground text-xl font-semibold"
-            >
-              Bubbly
-            </h2>
-            <p
-              id="project_description"
-              class="text-darkBackground text-base mt-2"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec
-              quam tempus, laoreet urna et, condimentum urna.
-            </p>
-          </div>
-        </container>
-      </section>
-
-      <section
-        id="contact"
-        class="flex flex-col justify-center items-center min-h-[100vh] p-0 relative"
+  <main
+    id="mainContent"
+    class="px-[50px] md:px-[100px] lg:px-[200px] mx-auto my-0 w-full max-w-screen-2xl min-h-screen"
+  >
+    <Introduction />
+    <About />
+    <section id="projects">
+      <div class="flex left-0">
+        <SquareTag text="Projects" />
+      </div>
+      <!-- Project 1 -->
+      <ProjectCard
+        title="ReelTalk Social Movie App"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec quam tempus, laoreet urna et, condimentum urna."
+        side="right"
+        img="/ReelTalk.png"
       >
-        <ContactForm client:load />
-      </section>
-    </main>
-  </body>
+        <ProjectButtons />
+      </ProjectCard>
+      <!-- Project 2 -->
+      <ProjectCard
+        title="Article Hub"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec quam tempus, laoreet urna et, condimentum urna."
+        img="/article_hub.png"
+      >
+        <ProjectButtons />
+      </ProjectCard>
+      <!-- Project 3 -->
+      <ProjectCard
+        title="Bubbly"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec quam tempus, laoreet urna et, condimentum urna."
+        side="right"
+        img="/bubbly.png"
+      >
+        <ProjectButtons />
+      </ProjectCard>
+    </section>
+
+    <section
+      id="contact"
+      class="flex flex-col justify-center items-center min-h-[90vh] p-0 relative"
+    >
+      <ContactForm client:load />
+    </section>
+  </main>
 </Layout>

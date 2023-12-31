@@ -41,10 +41,10 @@ export const ContactForm = () => {
       className="flex flex-col justify-center items-center relative gap-4"
       onSubmit={handleSubmit}
     >
-      <div className="absolute top-0 left-0">
-        <SquareTag text="Contact" />
-      </div>
-      <p className="ml-16 max-w-screen-sm z-10 mb-5">
+      <p className="max-w-screen-sm z-10 mb-5 relative">
+        <div className="absolute -top-11">
+          <SquareTag text="Contact" />
+        </div>
         Have a question or want to work together? Leave your details and I'll
         get back to you as soon as possible.
       </p>
