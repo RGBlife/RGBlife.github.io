@@ -1,4 +1,6 @@
 import { SquareTag } from "./SquareTag";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
 
 export const About = () => {
   return (
@@ -38,8 +40,8 @@ export const About = () => {
 
       <p className="max-w-screen-lg">
         I'm currently focused on enhancing my full-stack development skills and
-        am keen to explore Rust in the future, attracted by its static typing
-        and strong backend capabilities.
+        am currently exploring in ultising C#/.NET for my next project,
+        attracted by its static typing and strong backend capabilities.
       </p>
       <h2 className="text-darkSecondaryText text-lg my-3">
         My Toolkit Includes:
@@ -82,6 +84,10 @@ export const About = () => {
           responsive layouts.
         </li>
       </ul>
+      <div className="border-solid border-amber-800 border-2 p-5">
+        <FontAwesomeIcon icon={faReact} style={{color: "#5779b2",}} />
+        <p>React</p>
+      </div>
     </section>
   );
 };

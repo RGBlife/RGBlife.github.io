@@ -14,7 +14,7 @@
     @apply antialiased scroll-smooth w-full bg-darkBackground;
   }
   li {
-    @apply list-none text-darkSecondaryText flex font-light text-lg;
+    @apply list-none text-darkSecondaryText flex font-light text-lg mt-1;
   }
   p {
     @apply text-darkSecondaryText text-lg mt-5 font-light;
@@ -22,9 +22,6 @@
   img {
     @apply overflow-clip;
   }
-  /* #root {
-    @apply min-h-screen grid grid-rows-[1fr,auto] grid-cols-1;
-  } */
 }
 
 .gradient-line {

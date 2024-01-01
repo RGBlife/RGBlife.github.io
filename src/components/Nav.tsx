@@ -4,7 +4,7 @@ export const Nav = () => {
   return (
     <>
       <a
-        href="/"
+        href="#"
         className="text-darkAccent hover:text-darkHighlight mr-auto text-lg font-semibold"
       >
         Bret.

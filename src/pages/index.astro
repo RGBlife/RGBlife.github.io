@@ -7,6 +7,7 @@ import { Introduction } from "../components/Introduction";
 import { About } from "../components/About";
 import { ProjectButtons } from "../components/ProjectButtons";
 import { ProjectCard } from "../components/project/ProjectCard";
+import {Footer} from "../components/Footer";
 ---
 
 <Layout title="Bret Gomes | Junior Full Stack Developer">
@@ -25,8 +26,8 @@ import { ProjectCard } from "../components/project/ProjectCard";
   >
     <Introduction />
     <About />
-    <section id="projects">
-      <div class="flex left-0">
+    <section id="projects" class="pt-20">
+      <div class="flex left-0" id="projects">
         <SquareTag text="Projects" />
       </div>
       <!-- Project 1 -->
@@ -63,5 +64,6 @@ import { ProjectCard } from "../components/project/ProjectCard";
     >
       <ContactForm client:load />
     </section>
+    <Footer />
   </main>
 </Layout>
