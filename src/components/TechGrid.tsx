@@ -1,38 +1,26 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHtml5,
-  faCss3Alt,
-  faReact,
-  faNodeJs,
-  faGitAlt,
-  faJsSquare,
-  faNpm,
-} from "@fortawesome/free-brands-svg-icons";
-
 export const TechGrid = () => {
   const techs = [
-    { icon: faHtml5, name: "HTML", colour: "text-red-500" },
-    { icon: faCss3Alt, name: "CSS", colour: "text-blue-500" },
-    { icon: faReact, name: "React", colour: "text-blue-500" },
-    { icon: faNodeJs, name: "NodeJS", colour: "text-green-500" },
-    { icon: faGitAlt, name: "GIT", colour: "text-orange-500" },
-    { icon: faJsSquare, name: "JavaScript", colour: "text-yellow-500" },
-    { icon: faJsSquare, name: "TypeScript", colour: "text-blue-500" },
-    { icon: faNpm, name: "npm", colour: "text-red-500" },
-    { icon: faJsSquare, name: "Jest", colour: "text-red-500" },
+    { icon: "/HTML5_logo.png", name: "HTML" },
+    { icon: "/CSS3_logo.svg", name: "CSS" },
+    { icon: "/React-icon.svg", name: "React" },
+    { icon: "/Node.js_logo.svg", name: "Node.js" },
+    { icon: "/expressjs-icon.svg", name: "Express.js" },
+    { icon: "/JavaScript_logo.svg", name: "JavaScript" },
+    { icon: "/Typescript_logo_2020.svg", name: "TypeScript" },
+    { icon: "/jestjsio-icon.svg", name: "Jest" },
   ];
 
   return (
-      <div className="grid grid-cols-9 gap-4 p-5 w-full">
-        {techs.map((tech, index) => (
-          <div key={index} className="flex flex-col items-center rounded border-solid border-2 border-darkAccent p-4">
-            <FontAwesomeIcon
-              icon={tech.icon}
-              className={`${tech.colour} text-4xl text-darkAccent`}
-            />
-            <p className="text-sm mt-2">{tech.name}</p>
-          </div>
-        ))}
-      </div>
+    <div className="grid grid-cols-6 gap-4 p-5 w-full">
+      {techs.map((tech, index) => (
+        <div
+          key={index}
+          className="flex flex-col items-center rounded-md border-solid border-2 border-darkAccent py-4 px-4"
+        >
+          <img src={tech.icon} alt={tech.name} className="w-16 h-16" />
+          <p className="text-sm mt-2 font-semibold">{tech.name}</p>
+        </div>
+      ))}
+    </div>
   );
 };

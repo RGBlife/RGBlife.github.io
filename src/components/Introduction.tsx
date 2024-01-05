@@ -7,7 +7,7 @@ export const Introduction = () => {
         Bret Gomes
       </h2>
       <h3 className="text-darkPrimaryText text-7xl font-semibold mt-1">
-        Full Stack Developer
+        Junior Full Stack Developer
       </h3>
       <p className="text-darkSecondaryText text-lg mt-5 text-left max-w-screen-sm">
         I'm interested in helping engineer the future of software and web
