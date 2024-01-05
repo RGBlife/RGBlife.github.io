@@ -24,7 +24,7 @@ export function ProjectCard({
         })}
       >
         <img
-          className="w-full md:w-auto md:max-w-md object-cover hover:scale-105 transition-transform duration-500 ease-in-out"
+          className="w-full md:w-auto md:max-w-md md:max-h-96 object-cover hover:scale-105 transition-transform duration-500 ease-in-out"
           src={img}
           alt={title}
         />

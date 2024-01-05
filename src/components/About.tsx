@@ -12,7 +12,7 @@ export const About = () => {
       </div>
       <>
       <p className="max-w-screen-lg">
-        As a junior full-stack software developer from South East England, I embrace lifelong learning and have a deep-rooted passion for web development. My journey began with my first computer as a child, evolved through building gaming PCs for friends and family during the pandemic, and culminated in my current pursuit of software development.
+        As a junior full-stack software developer from South East England, I embrace lifelong learning and have a deep-rooted passion for web development. My tech journey began with my first computer as a child, evolved through building gaming PCs for friends and family during the pandemic, and culminated in my current pursuit of software development.
       </p>
 
       <p className="max-w-screen-lg">

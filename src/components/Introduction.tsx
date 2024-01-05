@@ -11,9 +11,10 @@ export const Introduction = () => {
       </h3>
       <p className="text-darkSecondaryText text-lg mt-5 text-left max-w-screen-sm">
         I'm interested in helping engineer the future of software and web
-        applications with a keen interest in user experience. Currently, I'm
-        building an array of personal projects to explore new technologies and
-        solve everyday problems.
+        applications with a keen interest in user experience. Currently, At the
+        moment, I'm all about getting my hands dirty with personal projects,
+        playing around with new tech, and quenching my thirst for making things
+        happen.
       </p>
     </section>
   );

@@ -61,7 +61,7 @@ export const MenuToggle = () => {
           className="block text-darkPrimaryText hover:text-darkAccent"
           onClick={toggleMenu}
         >
-          Home
+          About
         </a>
         <a
           href="#projects"

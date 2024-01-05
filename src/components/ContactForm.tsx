@@ -41,7 +41,7 @@ export const ContactForm = () => {
       className="flex flex-col justify-center items-center relative gap-4"
       onSubmit={handleSubmit}
     >
-      <span className="text-darkPrimaryText max-w-screen-sm z-10 mb-5 relative">
+      <span className="text-darkPrimaryText max-w-screen-sm pt-2 z-10 mb-5 relative">
         <label className="absolute -top-11">
           <SquareTag text="Contact" />
         </label>
