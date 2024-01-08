@@ -7,7 +7,7 @@ import { Introduction } from "../components/Introduction";
 import { About } from "../components/About";
 import { ProjectButtons } from "../components/ProjectButtons";
 import { ProjectCard } from "../components/project/ProjectCard";
-import {Footer} from "../components/Footer";
+import { Footer } from "../components/Footer";
 ---
 
 <Layout title="Bret Gomes | Junior Full Stack Developer">
@@ -37,7 +37,7 @@ import {Footer} from "../components/Footer";
         side="right"
         img="/ReelTalk.png"
       >
-        <ProjectButtons />
+        <ProjectButtons github="https://github.com/RGBlife/ReelTalk" demo="https://reel-talk-nu.vercel.app/" />
       </ProjectCard>
       <!-- Project 2 -->
       <ProjectCard
@@ -45,7 +45,7 @@ import {Footer} from "../components/Footer";
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec quam tempus, laoreet urna et, condimentum urna."
         img="/article_hub.png"
       >
-        <ProjectButtons />
+        <ProjectButtons github="https://github.com/RGBlife/news-api-ui" demo="https://articlehub-ui.netlify.app/" />
       </ProjectCard>
       <!-- Project 3 -->
       <ProjectCard
@@ -54,7 +54,8 @@ import {Footer} from "../components/Footer";
         side="right"
         img="/bubbly.png"
       >
-        <ProjectButtons />
+        <ProjectButtons github="https://github.com/RGBlife/Bubbly" />
+        <!-- Bubbly doesn't have a Demo link as it still needs deployment -->
       </ProjectCard>
     </section>
 
