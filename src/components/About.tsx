@@ -1,6 +1,5 @@
 import { SquareTag } from "./SquareTag";
 import { TechGrid } from "./TechGrid";
-import { Tooltip } from "react-tooltip";
 
 export const About = () => {
   return (
@@ -29,7 +28,6 @@ export const About = () => {
           coding truly ignited, driving me to further explore the intricacies of
           software development.
         </p>
-
         <h2 className="text-darkSecondaryText text-lg my-3">
           My Toolkit Includes:
         </h2>
