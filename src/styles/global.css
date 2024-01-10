@@ -3,6 +3,41 @@
 @tailwind components;
 @tailwind utilities;
 
+.slide-up {
+  animation: slideUp 3s forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @layer base {
   body {
     @apply leading-snug font-inter h-full m-0 p-0;
@@ -17,7 +52,7 @@
     @apply list-none text-darkSecondaryText flex font-light text-lg mt-1;
   }
   p {
-    @apply text-darkSecondaryText text-xl mt-5 font-normal leading-7;
+    @apply text-darkSecondaryText text-lg mt-5 font-normal leading-7;
   }
   img {
     @apply overflow-clip;
