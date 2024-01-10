@@ -14,14 +14,14 @@ export function ProjectButtons({ github, demo }: Props) {
         target="_blank"
         className="text-darkBackground text-base mt-2"
       >
-        <FontAwesomeIcon icon={faUpRightFromSquare} className="h-8" />
+        <FontAwesomeIcon icon={faUpRightFromSquare} className="h-10" />
       </a>
       <a
         href={github}
         target="_blank"
         className="text-darkBackground text-base mt-2"
       >
-        <FontAwesomeIcon icon={faGithub} className="h-8" />
+        <FontAwesomeIcon icon={faGithub} className="h-10" />
       </a>
     </div>
   );

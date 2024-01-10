@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Tooltip } from "./Tooltip";
 
 export const TechGrid = () => {
-  const [hovered, setHovered] = useState(false);
 
   const techs = [
     { icon: "/HTML5_logo.png", name: "HTML", description: "Learned from an early stage. I always strive to keep HTML as semantic as possible." },
