@@ -4,8 +4,8 @@ export const Nav = () => {
   return (
     <>
       <a
-        href="#"
-        className="text-darkAccent hover:text-darkHighlight mr-auto text-lg font-semibold"
+        href="#intro"
+        className="text-darkAccent hover:text-darkHighlight mr-auto text-lg font-bold"
       >
         Bret.
       </a>
@@ -13,25 +13,25 @@ export const Nav = () => {
         <ol className="hidden md:flex items-center mx-auto px-4 justify-end gap-5 py-3">
           <a
             href="#about"
-            className="text-darkPrimaryText hover:text-darkAccent"
+            className="text-darkPrimaryText hover:text-darkAccent font-semibold"
           >
             About
           </a>
           <a
             href="#projects"
-            className="text-darkPrimaryText hover:text-darkAccent"
+            className="text-darkPrimaryText hover:text-darkAccent font-semibold" 
           >
             Projects
           </a>
           <a
             href="#contact"
-            className="text-darkPrimaryText hover:text-darkAccent"
+            className="text-darkPrimaryText hover:text-darkAccent font-semibold" 
           >
             Contact
           </a>
           <a
             href="#cv"
-            className="text-darkAccent border-2 border-solid border-darkAccent px-4 py-1 rounded hover:bg-darkAccent hover:text-darkBackground"
+            className="text-darkAccent  border-2 border-solid border-darkAccent  px-4 py-1 rounded hover:bg-darkAccent hover:text-darkBackground font-semibold"
           >
             CV
           </a>

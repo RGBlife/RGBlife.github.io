@@ -8,20 +8,20 @@ type Props = {
 };
 export function ProjectButtons({ github, demo }: Props) {
   return (
-    <div className="flex gap-6 mt-2">
+    <div className="flex gap-6 mt-2 justify-start">
       <a
         href={demo}
         target="_blank"
-        className="text-darkBackground text-base mt-2"
+        className="border-effect-link mt-2 w-8 h-12 md:w-9 md:h-9 flex justify-center items-center rounded-sm"
       >
-        <FontAwesomeIcon icon={faUpRightFromSquare} className="h-10" />
+        <FontAwesomeIcon icon={faUpRightFromSquare} className="h-8 md:h-10" />
       </a>
       <a
         href={github}
         target="_blank"
-        className="text-darkBackground text-base mt-2"
+        className="border-effect-link mt-2"
       >
-        <FontAwesomeIcon icon={faGithub} className="h-10" />
+        <FontAwesomeIcon icon={faGithub} className="h-8 md:h-10" />
       </a>
     </div>
   );
