@@ -11,9 +11,14 @@ export const MenuToggle = () => {
     const mainContent = document.getElementById("mainContent");
 
     if (mainContent) {
-      menuVisible
-        ? mainContent.classList.add("blur-sm")
-        : mainContent.classList.remove("blur-sm");
+      if (menuVisible) {
+        mainContent.classList.add("blur-sm");
+        document.body.classList.add("no-scroll");
+
+      } else {
+        mainContent.classList.remove("blur-sm");
+        document.body.classList.remove("no-scroll");
+      }
     }
   }, [menuVisible]);
 
@@ -77,7 +82,7 @@ export const MenuToggle = () => {
           Contact
         </a>
         <a
-          href="../../../public/bret-gomes-cv.pdf"
+          href="/bret-gomes-cv.pdf"
           target="_blank"
           className="text-darkAccent font-semibold hover:text-darkAccent hover:border-darkHighlight border-2 border-solid border-darkAccent px-4 py-1 rounded"
           onClick={toggleMenu}
