@@ -10,7 +10,7 @@ export const Nav = () => {
         Bret.
       </a>
       <nav className="w-fit">
-        <ol className="hidden md:flex items-center mx-auto px-4 justify-end gap-5 py-3">
+        <ol className="hidden md:flex items-center mx-auto px-4 justify-end gap-5 lg:gap-10 py-3">
           <a
             href="#about"
             className="text-darkPrimaryText hover:text-darkAccent font-semibold"
@@ -30,7 +30,8 @@ export const Nav = () => {
             Contact
           </a>
           <a
-            href="#cv"
+            href="../../../public/bret-gomes-cv.pdf"
+            target="_blank"
             className="text-darkAccent  border-2 border-solid border-darkAccent  px-4 py-1 rounded hover:bg-darkAccent hover:text-darkBackground font-semibold"
           >
             CV

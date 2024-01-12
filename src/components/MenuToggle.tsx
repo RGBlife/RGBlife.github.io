@@ -78,7 +78,8 @@ export const MenuToggle = () => {
           Contact
         </a>
         <a
-          href="#cv"
+          href="../../../public/bret-gomes-cv.pdf"
+          target="_blank"
           className="text-darkAccent font-semibold hover:text-darkAccent hover:border-darkHighlight border-2 border-solid border-darkAccent px-4 py-1 rounded"
           onClick={toggleMenu}
         >
