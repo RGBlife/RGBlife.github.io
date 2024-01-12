@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { createPortal } from "react-dom";
 
 export const MenuToggle = () => {
   const [menuVisible, setMenuVisible] = useState(false);

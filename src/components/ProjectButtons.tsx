@@ -6,23 +6,15 @@ type Props = {
   github?: string;
   demo?: string;
 };
-export function ProjectButtons({ github, demo }: Props) {
+export const ProjectButtons = ({ github, demo }: Props) => {
   return (
-    <div className="flex gap-6 mt-2 justify-start">
-      <a
-        href={demo}
-        target="_blank"
-        className="border-effect-link mt-2 w-8 h-12 md:w-9 md:h-9 flex justify-center items-center rounded-sm"
-      >
+    <div className="flex gap-6 justify-start">
+      <a href={demo} target="_blank" className="border-effect-link">
         <FontAwesomeIcon icon={faUpRightFromSquare} className="h-8 md:h-10" />
       </a>
-      <a
-        href={github}
-        target="_blank"
-        className="border-effect-link mt-2"
-      >
+      <a href={github} target="_blank" className="border-effect-link">
         <FontAwesomeIcon icon={faGithub} className="h-8 md:h-10" />
       </a>
     </div>
   );
-}
+};

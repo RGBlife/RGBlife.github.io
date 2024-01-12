@@ -30,7 +30,7 @@ export const Nav = () => {
             Contact
           </a>
           <a
-            href="../../../public/bret-gomes-cv.pdf"
+            href="/bret-gomes-cv.pdf"
             target="_blank"
             className="text-darkAccent  border-2 border-solid border-darkAccent  px-4 py-1 rounded hover:bg-darkAccent hover:text-darkBackground font-semibold"
           >

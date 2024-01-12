@@ -39,7 +39,7 @@ export function ProjectCard({
         )}
       >
         <h2 className="text-darkBackground text-xl font-semibold">{title}</h2>
-        <p className="text-darkBackground text-base mt-2">{description}</p>
+        <p className="text-darkBackground text-base mt-2 mb-2">{description}</p>
         {children}
       </div>
     </div>

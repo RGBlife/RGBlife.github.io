@@ -1,5 +1,6 @@
 import { SquareTag } from "./SquareTag";
 import { TechGrid } from "./TechGrid";
+import { Test } from "./Test";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -43,7 +44,7 @@ export const About = () => {
           <TechGrid />
         </>
       </section>
-      <Carousel>
+      {/* <Carousel>
   <CarouselContent>
     <CarouselItem>1</CarouselItem>
     <CarouselItem>2</CarouselItem>
@@ -51,8 +52,7 @@ export const About = () => {
   </CarouselContent>
   <CarouselPrevious />
   <CarouselNext />
-</Carousel>
-
+</Carousel> */}
     </>
   );
 };
