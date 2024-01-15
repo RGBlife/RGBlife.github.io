@@ -34,7 +34,7 @@ export function ProjectCard({
           "flex flex-col mt-4 md:mt-0 bg-darkAccent z-10 p-4 shadow-lg rounded-sm",
           {
             "md:ml-[-100px] lg:order-2": side === "right",
-            "md:mr-[-100px] lg:order-1": side === "left",
+            "md:ml-[-100px] lg:mr-[-100px] lg:order-1": side === "left",
           }
         )}
       >

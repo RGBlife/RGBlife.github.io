@@ -10,10 +10,10 @@ export const ProjectButtons = ({ github, demo }: Props) => {
   return (
     <div className="flex gap-6 justify-start">
       <a href={demo} target="_blank" className="border-effect-link">
-        <FontAwesomeIcon icon={faUpRightFromSquare} className="h-8 md:h-10" />
+        <FontAwesomeIcon icon={faUpRightFromSquare} className="h-6 md:h-8" />
       </a>
       <a href={github} target="_blank" className="border-effect-link">
-        <FontAwesomeIcon icon={faGithub} className="h-8 md:h-10" />
+        <FontAwesomeIcon icon={faGithub} className="h-6 md:h-8" />
       </a>
     </div>
   );
