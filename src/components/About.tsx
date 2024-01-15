@@ -10,12 +10,13 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+
 export const About = () => {
   return (
     <>
       <section
         id="about"
-        className="flex flex-col justify-center items-start min-h-[90vh] p-0 mt-24 md:mt-0"
+        className="about-section flex flex-col justify-center items-start min-h-[90vh] mt-24 md:mt-0"
       >
         <div className="flex items-center w-full">
           <SquareTag text="About Me" />
