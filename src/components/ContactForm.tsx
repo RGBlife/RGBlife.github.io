@@ -51,7 +51,7 @@ export const ContactForm = () => {
             success: true,
             error: false,
             animating: true,
-            message: "Thank you for your message!!",
+            message: "Thank you for your message!",
           });
           setName("");
           setEmail("");
@@ -123,10 +123,13 @@ export const ContactForm = () => {
         disabled={loading}
       >
         {loading ? (
-          <FontAwesomeIcon
-            icon={faSpinner}
-            className="animate-spin loading-spinner"
-          />
+          <>
+            <FontAwesomeIcon
+              icon={faSpinner}
+              className="animate-spin h-5 w-5 mr-3"
+            />
+            Sending...
+          </>
         ) : (
           "Submit"
         )}
