@@ -10,6 +10,27 @@ import { ProjectCard } from "../components/project/ProjectCard";
 import { Footer } from "../components/Footer";
 ---
 
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.toggle("show", entry.isIntersecting);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 1 }
+  );
+
+  const elements = document.querySelectorAll("");
+  console.log(elements);
+
+  elements.forEach((element) => {
+    observer.observe(element);
+  });
+</script>
+
 <Layout title="Bret Gomes | Junior Full Stack Developer">
   <header
     class="px-10 lg:px-14 h-fit lg:h-20 fixed top-0 w-full bg-darkBackground shadow-md z-50 gap-1 justify-end flex items-center"
@@ -37,7 +58,10 @@ import { Footer } from "../components/Footer";
         side="right"
         img="/ReelTalk.png"
       >
-        <ProjectButtons github="https://github.com/RGBlife/ReelTalk" demo="https://reel-talk-nu.vercel.app/" />
+        <ProjectButtons
+          github="https://github.com/RGBlife/ReelTalk"
+          demo="https://reel-talk-nu.vercel.app/"
+        />
       </ProjectCard>
       <!-- Project 2 -->
       <ProjectCard
@@ -45,7 +69,10 @@ import { Footer } from "../components/Footer";
         description="Full stack news app that allows users to view the latest community-posted news and filter by categories. Frontend built with React, TailwindCSS, hosted on Netlify, and the News API. The backend, built with Node.js/Express and PostgreSQL using the MVC design pattern and hosted on Render."
         img="/article_hub.png"
       >
-        <ProjectButtons github="https://github.com/RGBlife/news-api-ui" demo="https://articlehub-ui.netlify.app/" />
+        <ProjectButtons
+          github="https://github.com/RGBlife/news-api-ui"
+          demo="https://articlehub-ui.netlify.app/"
+        />
       </ProjectCard>
       <!-- Project 3 -->
       <ProjectCard
@@ -61,7 +88,6 @@ import { Footer } from "../components/Footer";
     <section id="see-more">
       <!-- This section will be interactive to see more projects beyond the featured projects ive shown previously
      -->
-
     </section>
 
     <section

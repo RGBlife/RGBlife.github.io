@@ -23,7 +23,7 @@ export const About = () => {
         </div>
         <>
           <p className="max-w-screen-lg">
-            As a junior full-stack software developer from South East England, I
+            As a junior full stack software developer from South East England, I
             embrace lifelong learning and have a deep-rooted passion for web
             development. My tech journey began with my first computer as a
             child, evolved through building gaming PCs for friends and family
@@ -45,15 +45,7 @@ export const About = () => {
           <TechGrid />
         </>
       </section>
-      {/* <Carousel>
-  <CarouselContent>
-    <CarouselItem>1</CarouselItem>
-    <CarouselItem>2</CarouselItem>
-    <CarouselItem>3</CarouselItem>
-  </CarouselContent>
-  <CarouselPrevious />
-  <CarouselNext />
-</Carousel> */}
+
     </>
   );
 };

@@ -4,6 +4,12 @@ import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
+type FormValues = {
+  name: string;
+  email: string;
+  message: string;
+};
+
 export const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -17,12 +23,12 @@ export const ContactForm = () => {
   });
 
   useEffect(() => {
-    if (submissionStatus.error) {
+    if ( submissionStatus.error) {
       setSubmissionStatus({
         success: false,
         error: false,
-        message: "",
         animating: false,
+        message: "",
       });
     }
   }, [name, email, message]);
@@ -135,13 +141,13 @@ export const ContactForm = () => {
         )}
       </button>
       {submissionStatus.animating && (
-        <div
+        <p
           className={`absolute bottom-0 text-sm mt-2 ${
             submissionStatus.success ? "text-green-500" : "text-red-500"
           } ${submissionStatus.success ? "slide-up" : ""}`}
         >
           {submissionStatus.message}
-        </div>
+        </p>
       )}
     </form>
   );

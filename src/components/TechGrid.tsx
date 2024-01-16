@@ -1,6 +1,5 @@
 import { Tooltip } from "./Tooltip";
 
-
 export const TechGrid = () => {
   const techs = [
     {
