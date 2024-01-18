@@ -27,7 +27,7 @@ export const MenuToggle = () => {
       <div className="md:hidden h-[58px] flex justify-end">
         <button
           id="menuButton"
-          className="text-darkAccent z-10 p-2 focus:outline-none focus:ring"
+          className="text-darkAccent animate-fadeIn z-10 p-2 focus:outline-none focus:ring"
           onClick={toggleMenu}
         >
           <svg

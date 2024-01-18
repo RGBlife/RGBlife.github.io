@@ -153,9 +153,30 @@
   margin-top: -100px;
 }
 
-.card {
-  border-radius: 10px;
-  background-color: var(--card);
-  color: var(--card-foreground);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* testing */
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInFromTop-1 {
+  animation: slideInFromTop 1s cubic-bezier(.62,.16,.13,1.01) forwards;
+}
+
+.animate-slideInFromTop-2 {
+  animation: slideInFromTop 1s cubic-bezier(.62,.16,.13,1.01) 0.1s forwards;
+}
+
+.animate-slideInFromTop-3 {
+  animation: slideInFromTop 1s cubic-bezier(.62,.16,.13,1.01) 0.2s forwards;
+}
+.animate-slideInFromTop-4 {
+  animation: slideInFromTop 1s cubic-bezier(.62,.16,.13,1.01) 0.3s forwards;
 }
