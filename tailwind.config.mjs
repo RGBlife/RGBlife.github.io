@@ -14,7 +14,6 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
-        roboto: ['Roboto', 'sans-serif'],
       },
       colors: {
         darkBackground: "#0a192f",
