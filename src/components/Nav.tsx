@@ -1,17 +1,6 @@
 import { MenuToggle } from "./MenuToggle";
 import { useEffect, useState } from "react";
 
-type AnimationDurations = {
-  [key: string]: string;
-};
-
-const animationDurations: AnimationDurations = {
-  about: "0.7s",
-  projects: "0.9s",
-  contact: "1.1s",
-  cv: "1.3s",
-};
-
 export const Nav = () => {
   const [currentSection, setCurrentSection] = useState("intro");
 
@@ -35,7 +24,7 @@ export const Nav = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const linkClass = (section: string, animationOrder: number) => {
+  const linkClassNav = (section: string, animationOrder: number) => {
     const baseClass =
       "text-darkPrimaryText hover:text-darkAccent font-semibold";
 
@@ -59,20 +48,20 @@ export const Nav = () => {
       </a>
       <nav className="w-fit">
         <ol className="hidden md:flex items-center mx-auto px-4 justify-end gap-5 lg:gap-10 py-3">
-          <a href="#about" className={linkClass("about", 1)}>
+          <a href="#about" className={linkClassNav("about", 1)}>
             About
           </a>
-          <a href="#projects" className={linkClass("projects", 2)}>
+          <a href="#projects" className={linkClassNav("projects", 2)}>
             Projects
           </a>
-          <a href="#contact" className={linkClass("contact", 3)}>
+          <a href="#contact" className={linkClassNav("contact", 3)}>
             Contact
           </a>
 
           <a
             href="/bret-gomes-cv.pdf"
             target="_blank"
-            className={linkClass("cv", 4)}
+            className={linkClassNav("cv", 4)}
           >
             CV
           </a>
