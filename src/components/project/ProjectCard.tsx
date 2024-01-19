@@ -16,7 +16,7 @@ export function ProjectCard({
   children,
 }: PropsWithChildren<Props>) {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center p-4 fade-in">
+    <div className="flex flex-col md:flex-row justify-center items-center p-4 fade-effect">
       <div
         className={clsx("flex-shrink-0 relative", {
           "lg:order-1": side === "right",

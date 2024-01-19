@@ -169,6 +169,14 @@
 
 /* rest of the page animation */
 
+.fade-effect {
+  opacity: 0;
+}
+
+.fade-effect-header {
+  opacity: 0;
+}
+
 .fade-in {
   opacity: 0;
   transform: translateY(5%);

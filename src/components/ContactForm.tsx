@@ -80,7 +80,7 @@ export const ContactForm = () => {
 
   return (
     <form
-      className="flex flex-col justify-center items-center relative gap-4"
+      className="flex flex-col justify-center items-center relative gap-4 fade-effect"
       onSubmit={handleSubmit}
     >
       <span className="text-darkPrimaryText max-w-screen-sm pt-2 z-10 mb-5 relative">

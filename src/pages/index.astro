@@ -30,19 +30,15 @@ import { Footer } from "../components/Footer";
         }
       });
     },
-    { threshold: 0.1 }
+    { threshold: 0.5 }
   );
 
-  // const elements = document.querySelectorAll(".fade-in");
-  // console.log(elements);
-
-  // elements.forEach((element) => {
-  //   observer.observe(element);
-  // });
-  const elementsToAnimate = document.querySelectorAll(".fade-effect");
+  const elementsToAnimate = document.querySelectorAll(".fade-effect, .fade-effect-header");
+  console.log(elementsToAnimate, "elementsToAnimate", typeof elementsToAnimate);
   elementsToAnimate.forEach((element) => {
     observer.observe(element);
   });
+
 </script>
 
 <Layout title="Bret Gomes | Junior Full Stack Developer">
@@ -63,7 +59,7 @@ import { Footer } from "../components/Footer";
     <About />
     <section id="projects" class="pt-20">
       <div class="flex left-0">
-        <SquareTag text="Projects" animation="fade-in-header" />
+        <SquareTag text="Projects" animation="fade-effect-header" />
       </div>
       <!-- Project 1 -->
       <ProjectCard
