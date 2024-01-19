@@ -14,19 +14,33 @@ import { Footer } from "../components/Footer";
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
+        // if (entry.isIntersecting) {
+        //   entry.target.classList.toggle("show", entry.isIntersecting);
+        //   observer.unobserve(entry.target);
+        // }
+        if (
+          entry.isIntersecting &&
+          entry.target.classList.contains("fade-effect-header")
+        ) {
+          entry.target.classList.add("fade-in-header");
+        }
+
         if (entry.isIntersecting) {
-          entry.target.classList.toggle("show", entry.isIntersecting);
-          observer.unobserve(entry.target);
+          entry.target.classList.add("fade-in");
         }
       });
     },
-    { threshold: 1 }
+    { threshold: 0.1 }
   );
 
-  const elements = document.querySelectorAll("");
-  console.log(elements);
+  // const elements = document.querySelectorAll(".fade-in");
+  // console.log(elements);
 
-  elements.forEach((element) => {
+  // elements.forEach((element) => {
+  //   observer.observe(element);
+  // });
+  const elementsToAnimate = document.querySelectorAll(".fade-effect");
+  elementsToAnimate.forEach((element) => {
     observer.observe(element);
   });
 </script>
@@ -48,8 +62,8 @@ import { Footer } from "../components/Footer";
     <Introduction />
     <About />
     <section id="projects" class="pt-20">
-      <div class="flex left-0" id="projects">
-        <SquareTag text="Projects" />
+      <div class="flex left-0">
+        <SquareTag text="Projects" animation="fade-in-header" />
       </div>
       <!-- Project 1 -->
       <ProjectCard

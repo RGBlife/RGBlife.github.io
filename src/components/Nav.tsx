@@ -42,7 +42,7 @@ export const Nav = () => {
     <>
       <a
         href="#intro"
-        className="text-darkAccent animate-fadeIn hover:text-darkHighlight mr-auto text-lg font-bold"
+        className="text-darkAccent animate-logoFadeIn hover:text-darkHighlight mr-auto text-lg font-bold"
       >
         Bret.
       </a>

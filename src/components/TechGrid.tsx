@@ -54,7 +54,7 @@ export const TechGrid = () => {
 
   return (
     <>
-      <div className="md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 p-5 w-full">
+      <div className="md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 p-5 w-full fade-effect">
         {techs.map((tech, index) => (
           <Tooltip key={index} text={tech.description}>
             <div

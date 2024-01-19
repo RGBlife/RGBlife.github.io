@@ -19,10 +19,10 @@ export const About = () => {
         className="about-section flex flex-col justify-center items-start min-h-[90vh] mt-24 md:mt-0"
       >
         <div className="flex items-center w-full">
-          <SquareTag text="About Me" />
+          <SquareTag text="About Me" animation="fade-in-header" />
         </div>
         <>
-          <p className="max-w-screen-lg">
+          <p className="max-w-screen-lg fade-effect">
             As a junior full stack software developer from South East England, I
             embrace lifelong learning and have a deep-rooted passion for web
             development. My tech journey began with my first computer as a
@@ -31,7 +31,7 @@ export const About = () => {
             software development.
           </p>
 
-          <p className="max-w-screen-lg">
+          <p className="max-w-screen-lg fade-effect">
             My career journey has taken me through various roles in eCommerce,
             primarily in the B2B sector, where I played a key role in tech
             support and testing for the UK's largest ergonomic chair supplier.
@@ -39,7 +39,7 @@ export const About = () => {
             coding truly ignited, driving me to further explore the intricacies
             of software development.
           </p>
-          <h2 className="text-darkSecondaryText text-lg my-3">
+          <h2 className="text-darkSecondaryText text-lg my-3 fade-effect">
             My Toolkit Includes:
           </h2>
           <TechGrid />

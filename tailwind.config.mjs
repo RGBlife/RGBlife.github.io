@@ -14,6 +14,7 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        roboto: ['Roboto', 'sans-serif'],
       },
       colors: {
         darkBackground: "#0a192f",
@@ -93,7 +94,7 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        fadeIn: "fadeIn 1s ease-in-out",
+        logoFadeIn: "fadeIn 1s ease-in-out",
       },
     },
   },
