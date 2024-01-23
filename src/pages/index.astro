@@ -5,7 +5,6 @@ import { SquareTag } from "../components/SquareTag";
 import { ContactForm } from "../components/ContactForm";
 import { Introduction } from "../components/Introduction";
 import { About } from "../components/About";
-import { ProjectButtons } from "../components/ProjectButtons";
 import { ProjectCard } from "../components/project/ProjectCard";
 import { Footer } from "../components/Footer";
 ---
@@ -21,7 +20,10 @@ import { Footer } from "../components/Footer";
           entry.target.classList.add("fade-in-header");
         }
 
-        if (entry.isIntersecting && !entry.target.classList.contains("fade-effect-header")) {
+        if (
+          entry.isIntersecting &&
+          !entry.target.classList.contains("fade-effect-header")
+        ) {
           entry.target.classList.add("fade-in");
         }
       });
@@ -66,9 +68,6 @@ import { Footer } from "../components/Footer";
         github="https://github.com/RGBlife/ReelTalk"
         demo="https://reel-talk-nu.vercel.app/"
       >
-        <ProjectButtons
-
-        />
       </ProjectCard>
       <!-- Project 2 -->
       <ProjectCard
@@ -76,11 +75,8 @@ import { Footer } from "../components/Footer";
         description="Full stack news app that allows users to view the latest community-posted news and filter by categories. Frontend built with React, TailwindCSS, hosted on Netlify, and the News API. The backend, built with Node.js/Express and PostgreSQL using the MVC design pattern and hosted on Render."
         img="/article_hub.png"
         github="https://github.com/RGBlife/news-api-ui"
-          demo="https://articlehub-ui.netlify.app/"
+        demo="https://articlehub-ui.netlify.app/"
       >
-        <ProjectButtons
-          
-        />
       </ProjectCard>
       <!-- Project 3 -->
       <ProjectCard
@@ -90,7 +86,6 @@ import { Footer } from "../components/Footer";
         img="/bubbly.png"
         github="https://github.com/RGBlife/Bubbly"
       >
-        <ProjectButtons  />
         <!-- Bubbly doesn't have a Demo link as it still needs deployment -->
       </ProjectCard>
     </section>
