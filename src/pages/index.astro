@@ -14,10 +14,6 @@ import { Footer } from "../components/Footer";
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        // if (entry.isIntersecting) {
-        //   entry.target.classList.toggle("show", entry.isIntersecting);
-        //   observer.unobserve(entry.target);
-        // }
         if (
           entry.isIntersecting &&
           entry.target.classList.contains("fade-effect-header")
@@ -25,7 +21,7 @@ import { Footer } from "../components/Footer";
           entry.target.classList.add("fade-in-header");
         }
 
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !entry.target.classList.contains("fade-effect-header")) {
           entry.target.classList.add("fade-in");
         }
       });
@@ -33,12 +29,12 @@ import { Footer } from "../components/Footer";
     { threshold: 0.5 }
   );
 
-  const elementsToAnimate = document.querySelectorAll(".fade-effect, .fade-effect-header");
-  console.log(elementsToAnimate, "elementsToAnimate", typeof elementsToAnimate);
+  const elementsToAnimate = document.querySelectorAll(
+    ".fade-effect, .fade-effect-header"
+  );
   elementsToAnimate.forEach((element) => {
     observer.observe(element);
   });
-
 </script>
 
 <Layout title="Bret Gomes | Junior Full Stack Developer">

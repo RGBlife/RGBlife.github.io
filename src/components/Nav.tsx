@@ -26,7 +26,7 @@ export const Nav = () => {
 
   const linkClassNav = (section: string, animationOrder: number) => {
     const baseClass =
-      "text-darkPrimaryText hover:text-darkAccent font-semibold";
+      "text-darkPrimaryText hover:text-darkAccent font-semibold p-2";
 
     const cvClass =
       "text-darkAccent  border-2 border-solid border-darkAccent  px-4 py-1 rounded hover:bg-darkAccent hover:text-darkBackground font-semibold";

@@ -19,7 +19,7 @@ export const About = () => {
         className="about-section flex flex-col justify-center items-start min-h-[90vh] mt-24 md:mt-0"
       >
         <div className="flex items-center w-full">
-          <SquareTag text="About Me" animation="fade-in-header" />
+          <SquareTag text="About Me" animation="fade-effect-header" />
         </div>
         <>
           <p className="max-w-screen-lg fade-effect">
