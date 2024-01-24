@@ -8,7 +8,7 @@ type Props = {
 };
 export const ProjectButtons = ({ github, demo }: Props) => {
   return (
-    <div className="flex gap-6 justify-start">
+    <div className="flex gap-2 justify-start">
       <a href={demo} target="_blank" className="border-effect-link">
         <FontAwesomeIcon icon={faUpRightFromSquare} className="h-6 md:h-8" />
       </a>

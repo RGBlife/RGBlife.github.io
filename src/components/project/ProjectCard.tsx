@@ -38,7 +38,7 @@ export function ProjectCard({
       </div>
       <div
         className={clsx(
-          "flex flex-col md:mt-0 bg-darkAccent z-10 p-4 shadow-lg rounded-sm",
+          "flex flex-col md:mt-0 bg-darkAccent z-10 p-4 shadow-lg rounded",
           {
             "md:ml-[-100px] lg:order-2": side === "right",
             "md:ml-[-100px] lg:ml-0 lg:mr-[-100px] lg:order-1": side === "left",
