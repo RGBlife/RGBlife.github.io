@@ -26,11 +26,13 @@ export function ProjectCard({
           "lg:order-2": side === "left",
         })}
       >
-        <a href={demo} target="_blank">
+        <a href={demo} target="_blank" aria-label={`${title} demo image`}>
           <img
-            className="w-full md:w-auto md:max-w-md md:max-h-96 object-cover hover:scale-105 transition-transform duration-500 ease-in-out"
+            loading="lazy"
+            sizes="(max-width: 300px) 280px, (max-width: 768px) 740px, 1280px"
             src={img}
             alt={title}
+            className="w-full md:w-auto md:max-w-md md:max-h-96 object-cover hover:scale-105 transition-transform duration-500 ease-in-out"
           />
         </a>
       </div>

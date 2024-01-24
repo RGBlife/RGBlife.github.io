@@ -3,7 +3,7 @@ import { Tooltip } from "./Tooltip";
 export const TechGrid = () => {
   const techs = [
     {
-      icon: "src/assets/HTML5_logo.png",
+      icon: "src/assets/HTML5_logo.webp",
       name: "HTML",
       description:
         "Learned from an early stage. I always strive to keep HTML as semantic as possible.",
@@ -15,7 +15,7 @@ export const TechGrid = () => {
         "Grew alongside my HTML skills. Evolved to using Tailwind, my go-to CSS framework now.",
     },
     {
-      icon: "src/assets/JavaScript_logo.svg",
+      icon: "src/assets/JavaScript_logo.webp",
       name: "JavaScript",
       description:
         "My first programming language, picked up in my Junior CRM Developer role and refined during the Northcoders Bootcamp.",
