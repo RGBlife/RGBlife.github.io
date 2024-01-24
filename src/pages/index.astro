@@ -1,12 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Nav } from "../components/Nav.tsx";
-import { SquareTag } from "../components/SquareTag";
 import { ContactForm } from "../components/ContactForm";
 import { Introduction } from "../components/Introduction";
 import { About } from "../components/About";
 import { ProjectCard } from "../components/project/ProjectCard";
 import { Footer } from "../components/Footer";
+import { HeaderText } from "src/components/HeaderText";
 ---
 
 <script>
@@ -55,10 +55,8 @@ import { Footer } from "../components/Footer";
   >
     <Introduction />
     <About />
-    <section id="projects" class="pt-20">
-      <div class="flex left-0">
-        <SquareTag text="Projects" animation="fade-effect-header" />
-      </div>
+    <section id="projects" class="flex flex-col items-center pt-20">
+      <HeaderText text="Projects" />
       <!-- Project 1 -->
       <ProjectCard
         title="ReelTalk Social Movie App"
@@ -67,8 +65,7 @@ import { Footer } from "../components/Footer";
         img="/ReelTalk.png"
         github="https://github.com/RGBlife/ReelTalk"
         demo="https://reel-talk-nu.vercel.app/"
-      >
-      </ProjectCard>
+      />
       <!-- Project 2 -->
       <ProjectCard
         title="Article Hub"
@@ -76,8 +73,7 @@ import { Footer } from "../components/Footer";
         img="/article_hub.png"
         github="https://github.com/RGBlife/news-api-ui"
         demo="https://articlehub-ui.netlify.app/"
-      >
-      </ProjectCard>
+      />
       <!-- Project 3 -->
       <ProjectCard
         title="Bubbly"

@@ -3,12 +3,7 @@ import { SquareTag } from "./SquareTag";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
-
-type FormValues = {
-  name: string;
-  email: string;
-  message: string;
-};
+import { HeaderText } from "./HeaderText";
 
 export const ContactForm = () => {
   const [name, setName] = useState("");
@@ -23,7 +18,7 @@ export const ContactForm = () => {
   });
 
   useEffect(() => {
-    if ( submissionStatus.error) {
+    if (submissionStatus.error) {
       setSubmissionStatus({
         success: false,
         error: false,
@@ -83,13 +78,12 @@ export const ContactForm = () => {
       className="flex flex-col justify-center items-center relative gap-4 fade-effect"
       onSubmit={handleSubmit}
     >
-      <span className="text-darkPrimaryText max-w-screen-sm pt-2 z-10 mb-5 relative">
-        <label className="absolute -top-11">
-          <SquareTag text="Contact" />
-        </label>
+      <HeaderText text="Contact" />
+
+      <p className="text-darkPrimaryText max-w-screen-sm pt-2 z-10 mb-5 relative">
         Have a question or want to work together? Leave your details and I'll
         get back to you as soon as possible.
-      </span>
+      </p>
 
       <input
         className="text-darkSecondaryText bg-lighterDarkBackground text-sm border-l-4 border-l-solid border-l-transparent w-2/4 px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-darkAccent focus:border-transparent"
