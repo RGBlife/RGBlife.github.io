@@ -87,7 +87,7 @@ export const ContactForm = () => {
       </p>
 
       <input
-        className="text-darkSecondaryText bg-lighterDarkBackground text-sm border-l-4 border-l-solid border-l-transparent w-2/4 px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-darkAccent focus:border-transparent"
+        className="text-darkSecondaryText bg-lighterDarkBackground text-sm border-l-4 border-l-solid border-l-transparent w-full px-3 md:w-2/4 py-1 rounded focus:outline-none focus:ring-2 focus:ring-darkAccent focus:border-transparent"
         placeholder="Name"
         type="text"
         id="name"
@@ -98,7 +98,7 @@ export const ContactForm = () => {
       />
 
       <input
-        className="text-darkSecondaryText bg-lighterDarkBackground text-sm border-l-4 border-l-solid border-l-transparent w-2/4 px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-darkAccent focus:border-transparent"
+        className="text-darkSecondaryText bg-lighterDarkBackground text-sm border-l-4 border-l-solid border-l-transparent w-full px-3 md:w-2/4 py-1 rounded focus:outline-none focus:ring-2 focus:ring-darkAccent focus:border-transparent"
         placeholder="Email"
         type="email"
         id="email"
@@ -109,7 +109,7 @@ export const ContactForm = () => {
       />
 
       <textarea
-        className="text-darkSecondaryText min-h-[130px] bg-lighterDarkBackground text-sm border-l-4 border-l-solid border-l-transparent w-2/4 h-36 px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-darkAccent focus:border-transparent"
+        className="text-darkSecondaryText min-h-[130px] bg-lighterDarkBackground text-sm border-l-4 border-l-solid border-l-transparent w-full px-3 md:w-2/4 h-36 py-1 rounded focus:outline-none focus:ring-2 focus:ring-darkAccent focus:border-transparent"
         id="message"
         value={message}
         required

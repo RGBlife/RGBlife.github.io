@@ -1,5 +1,3 @@
-import { Tooltip } from "./Tooltip";
-
 export const TechGrid = () => {
   const techs = [
     {
@@ -56,16 +54,14 @@ export const TechGrid = () => {
     <>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-5 w-full fade-effect">
         {techs.map((tech, index) => (
-          <Tooltip key={index} text={tech.description}>
-            <div
-              key={index}
-              className="flex flex-col items-center py-4 px-4 border-solid border-2 border-transparent hover:border-solid hover:border-2 hover:border-darkAccent rounded-md"
-            >
-              <img src={tech.icon} alt={tech.name} className="w-16 h-16" />
+          <div
+            key={index}
+            className="flex flex-col items-center py-4 px-4 rounded-md"
+          >
+            <img src={tech.icon} alt={tech.name} className="w-16 h-16" />
 
-              <p className="text-sm mt-2 font-semibold">{tech.name}</p>
-            </div>
-          </Tooltip>
+            <p className="text-sm mt-2 font-semibold">{tech.name}</p>
+          </div>
         ))}
       </div>
     </>
