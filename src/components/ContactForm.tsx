@@ -77,7 +77,9 @@ export const ContactForm = () => {
       className="flex flex-col justify-center items-center relative gap-4 fade-effect"
       onSubmit={handleSubmit}
     >
-      <HeaderText text="Contact" />
+          <h1 className="relative self-center text-2xl md:text-4xl font-bold text-darkSecondaryText before:content-[' '] before:absolute before:bg-darkAccent before:w-1/2 before:h-[5px] before:right-0 before:bottom-0 before:-z-10 fade-effect">
+      Contact
+    </h1>
 
       <p className="text-darkPrimaryText max-w-screen-sm mt-0 pt-2 z-10 mb-5 relative">
         Have a question or want to work together? Leave your details and I'll
