@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { SquareTag } from "./SquareTag";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
@@ -80,7 +79,7 @@ export const ContactForm = () => {
     >
       <HeaderText text="Contact" />
 
-      <p className="text-darkPrimaryText max-w-screen-sm pt-2 z-10 mb-5 relative">
+      <p className="text-darkPrimaryText max-w-screen-sm mt-0 pt-2 z-10 mb-5 relative">
         Have a question or want to work together? Leave your details and I'll
         get back to you as soon as possible.
       </p>

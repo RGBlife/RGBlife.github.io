@@ -1,7 +1,5 @@
-import { SquareTag } from "./SquareTag";
 import { TechGrid } from "./TechGrid";
 import { HeaderText } from "./HeaderText";
-import { Test } from "./Test";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
