@@ -48,15 +48,21 @@ export const Nav = () => {
       </a>
       <nav className="w-fit">
         <ol className="hidden md:flex items-center mx-auto px-4 justify-end gap-5 lg:gap-10 py-3">
-          <a href="#about" className={linkClassNav("about", 1)}>
-            About
-          </a>
-          <a href="#projects" className={linkClassNav("projects", 2)}>
-            Projects
-          </a>
-          <a href="#contact" className={linkClassNav("contact", 3)}>
-            Contact
-          </a>
+          <li>
+            <a href="#about" className={linkClassNav("about", 1)}>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#projects" className={linkClassNav("projects", 2)}>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className={linkClassNav("contact", 3)}>
+              Contact
+            </a>
+          </li>
 
           <a
             href="/bret-gomes-cv.pdf"
