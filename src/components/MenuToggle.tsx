@@ -14,7 +14,6 @@ export const MenuToggle = () => {
       if (menuVisible) {
         mainContent.classList.add("blur-sm");
         document.body.classList.add("no-scroll");
-
       } else {
         mainContent.classList.remove("blur-sm");
         document.body.classList.remove("no-scroll");
@@ -24,35 +23,19 @@ export const MenuToggle = () => {
 
   return (
     <>
-      <div className="md:hidden h-[58px] flex justify-end">
-        <button
-          id="menuButton"
-          className="text-darkAccent animate-fadeIn z-10 p-2 focus:outline-none focus:ring"
-          onClick={toggleMenu}
-        >
-          <svg
-            className="h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
+      <div className="md:hidden h-14 flex justify-end">
+        <label className="hamburger-menu md:hidden ">
+          <input type="checkbox" id="menuButton" onClick={toggleMenu} />
+        </label>
       </div>
+
       {menuVisible && (
         <div
           className="h-full w-full fixed flex flex-col inset-0"
           onClick={toggleMenu}
         />
       )}
-      <div
+      <aside
         id="mobileMenu"
         className={`${
           menuVisible
@@ -89,7 +72,7 @@ export const MenuToggle = () => {
         >
           CV
         </a>
-      </div>
+      </aside>
     </>
   );
 };
