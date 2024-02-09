@@ -5,6 +5,7 @@ type Props = {
   title: string;
   img: string;
   description: string;
+  techUsed: string[];
   github: string;
   demo?: string;
   side?: "left" | "right";
@@ -13,6 +14,7 @@ type Props = {
 export function ProjectCard({
   title,
   description,
+  techUsed,
   img,
   github,
   demo,
@@ -47,6 +49,19 @@ export function ProjectCard({
       >
         <h2 className="text-darkBackground text-xl font-semibold">{title}</h2>
         <p className="text-darkBackground text-base mt-2 mb-2">{description}</p>
+        <ul className="flex gap-2 flex-wrap my-2">
+          {techUsed.map((tech) => {
+            return (
+              <li
+                key={tech}
+                className="mt-0 text-darkSecondaryText text-sm border-solid shadow-md bg-darkBackground py-1 px-3 rounded-full"
+              >
+                {tech}
+              </li>
+            );
+          })}
+        </ul>
+        <div className="flex gap-2"></div>
         {<ProjectButtons github={github} demo={demo} />}
       </div>
     </div>
