@@ -54,7 +54,7 @@ export function ProjectCard({
             return (
               <li
                 key={tech}
-                className="mt-0 text-darkSecondaryText text-sm border-solid bg-darkBackground  py-1 px-3 rounded-full"
+                className="mt-0 text-darkBackground text-sm font-medium border-solid  border-bg-darkBackground border-2 py-1 px-3 rounded-full "
               >
                 {tech}
               </li>
