@@ -6,7 +6,7 @@ export const About = () => {
     <>
       <section
         id="about"
-        className="about-section flex flex-col justify-center items-start min-h-[90vh] mt-24 md:mt-0"
+        className="about-section flex flex-col justify-center items-start min-h-[90vh] pt-36 lg:pt-0 mt-24 md:mt-0"
       >
         <HeaderText text="About Me" />
 
