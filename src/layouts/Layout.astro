@@ -17,6 +17,16 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bretgomes.dev/" />
+    <meta property="og:title" content="Bret's Portfolio" />
+    <meta property="og:description" content="View my projects." />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/47285194?v=4"
+    />
   </head>
   <body>
     <slot />
