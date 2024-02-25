@@ -6,7 +6,7 @@ import vercel from "@astrojs/vercel/serverless";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), tailwind({ applyBaseStyles: false })],
-  site: "https://RGBlife.github.io",
+  site: "https://bretgomes.dev",
   base: "/",
   output: "server",
   adapter: vercel({
