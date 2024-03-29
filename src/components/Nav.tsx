@@ -24,6 +24,10 @@ export const Nav = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const showMessage = () => {
+    alert("CV removed for updates");
+  };
+
   const linkClassNav = (section: string, animationOrder: number) => {
     const baseClass =
       "text-darkPrimaryText hover:text-darkAccent font-semibold p-2";
@@ -63,14 +67,16 @@ export const Nav = () => {
               Contact
             </a>
           </li>
-
-          <a
+          <a onClick={showMessage} className={linkClassNav("cv", 4)}>
+            CV
+          </a>
+          {/* <a
             href="/bret-gomes-cv.pdf"
             target="_blank"
             className={linkClassNav("cv", 4)}
           >
             CV
-          </a>
+          </a> */}
         </ol>
         <MenuToggle />
       </nav>
