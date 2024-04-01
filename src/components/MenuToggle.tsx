@@ -21,6 +21,10 @@ export const MenuToggle = () => {
     }
   }, [menuVisible]);
 
+  const showMessage = () => {
+    alert("CV removed for updates");
+  };
+
   return (
     <>
       <div className="md:hidden h-14 flex justify-end">
@@ -64,11 +68,17 @@ export const MenuToggle = () => {
         >
           Contact
         </a>
-        <a
+        {/* <a
           href="/bret-gomes-cv.pdf"
           target="_blank"
           className="text-darkAccent font-semibold hover:text-darkAccent hover:border-darkHighlight border-2 border-solid border-darkAccent px-4 py-1 rounded"
           onClick={toggleMenu}
+        >
+          CV
+        </a> */}
+        <a
+          onClick={showMessage}
+          className="text-darkAccent font-semibold hover:text-darkAccent hover:border-darkHighlight border-2 border-solid border-darkAccent px-4 py-1 rounded"
         >
           CV
         </a>
