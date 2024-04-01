@@ -29,7 +29,7 @@ export const MenuToggle = () => {
     <>
       <div className="md:hidden h-14 flex justify-end">
         <label className="hamburger-menu md:hidden">
-          <input type="checkbox" id="menuButton" onClick={toggleMenu} />
+          <input type="checkbox" checked={menuVisible} id="menuButton" onClick={toggleMenu} />
         </label>
       </div>
 
